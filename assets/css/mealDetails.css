@@ -1,0 +1,109 @@
+/* 11 rem margin class  */
+.mt-11rem {
+    margin-top: 11rem;
+}
+
+/*  meals app body */
+#app {
+    padding-bottom: 0;
+}
+
+/* heading meal details */
+#detail-body h1:first-child {
+    box-shadow: 0 0 4px #b2b3ae, 0 0 4px #7f864d, 0 0 8px black, 0 0 9px #9beb15;
+    border-radius: 15px;
+    margin: 3rem 0 1.5rem !important;
+    width: fit-content;
+    padding: .5rem 1rem !important;
+    font-family: cursive;
+}
+
+/* meal thumbail body*/
+div#meal-thumbail {
+    border: 12px solid;
+    background-color: white;
+    border-radius: 12px;
+    max-width: 400px;
+}
+
+/* meal image */
+img.detail-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* details body */
+div#details {
+    padding: 1rem;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* (meal name heading) selected all h3 elements with class .text-center  */
+h3.text-center {
+    color: yellowgreen;
+    font-family: system-ui;
+}
+
+/* selected all span inside the details body */
+div#details span {
+    display: inline-block;
+    width: 65px;
+}
+
+/* meal instruction body */
+div#meal-instruction {
+    padding: 1rem;
+}
+
+/* hr elements */
+hr {
+    margin-top: 0;
+}
+
+/* meal instruction paragraph */
+div#meal-instruction p {
+    letter-spacing: 0.1rem;
+}
+
+
+/* (instruction heading) selected all h5 elements with class .text-center inside the details body*/
+h5.text-center {
+    color: gray;
+    font-family: system-ui;
+    letter-spacing: 1.5px;
+}
+
+/* meals footer body */
+footer.text-center {
+    position: relative;
+}
+
+/* // ... { ... } */
+
+
+/* it's applies to x-large devices (large desktops, greater than 1199.99px) */
+@media (min-width: 1199.99px) {
+
+    div#details h6 {
+        font-size: larger;
+    }
+
+    div#meal-instruction h5 {
+        font-size: 1.5rem;
+    }
+
+}
+
+/* // It's applies to x-small to large devices(width 0 to 1199.98px) */
+@media (max-width: 1199.98px) {
+    div#meal-thumbail {
+        width: 85%;
+        max-width: 400px;
+    }
+
+    div#details {
+
+        min-width: 270px;
+    }
+}

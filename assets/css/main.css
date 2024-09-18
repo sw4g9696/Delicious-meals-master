@@ -1,0 +1,273 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+/* body styles */
+body {
+  min-width: 272px;
+}
+
+/* root level variable */
+:root {
+  --bg-app: black;
+  --bg-nav: #6e8719;
+  --bg-ws: whitesmoke;
+  --bg-card-body: #656e00;
+  --clr-blue: rgb(17, 41, 255);
+  --clr-orng: #ff4900;
+  --clr-ylw: yellow;
+  --bs-columns: 12;
+  --bs-gr: linear-gradient(to top, red, blue);
+}
+
+/* styles for hide element  */
+.hide {
+  display: none !important;
+}
+
+/* white background */
+.bg-w {
+  background-color: var(--bg-ws);
+}
+
+/* blue color */
+.clr-blue {
+  color: var(--clr-blue);
+}
+
+.text-gradient {
+  background-image: linear-gradient(181deg, var(--clr-orng) 5%, var(--clr-ylw));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* app body styles */
+#app {
+  min-height: 100vh;
+  background-color: var(--bg-app);
+  padding-bottom: 1rem;
+}
+
+/* nav body style */
+nav {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  background-color: var(--bg-nav);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(26, 10, 10, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* brand logo style */
+.brand-logo {
+  height: 37px;
+  filter: drop-shadow(-1px 4px 3px black);
+}
+
+/* side nav menu style */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/* a tag style into sidenav */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/*  a tag mouse hover style into sidenav */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* close button tag style into sidenav */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+div#meal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* h1 tag style into meal body  */
+#meal-body h1 {
+  box-shadow: 0 0 4px #b2b3ae, 0 0 4px #7f864d, 0 0 8px black, 0 0 9px #9beb15;
+  border-radius: 15px;
+  margin: 3rem 0 0 !important;
+  width: fit-content;
+  padding: 1rem;
+  font-family: cursive;
+}
+
+/* search bar style */
+#search-bar {
+  max-width: 600px;
+  position: relative;
+}
+
+/* search bar input style */
+#search-bar input {
+  height: 50px;
+  border-radius: 20px;
+  padding: 12px 20px 12px 50px;
+
+}
+
+/* search icon button style */
+#search-btn {
+  background-image: url('https://www.w3schools.com/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 12px;
+  width: 45px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: white;
+  border: none;
+}
+
+/* focus style on search icon button*/
+.form-control:focus+button {
+  border-right: 1.5px solid grey !important;
+}
+
+/*  loading style */
+.loading {
+  position: absolute;
+  top: 50vh;
+}
+
+/* first span child style into loading class */
+.loading span:first-child {
+  font-size: 1.55rem;
+  font-family: cursive;
+  padding: 0 0.5rem;
+  position: relative;
+  top: -6px;
+
+}
+
+/* card stlye */
+.card {
+  width: 15rem;
+  border: 8px solid white;
+  margin: 0.5rem;
+}
+
+/* card img */
+.card img {
+  cursor: pointer;
+}
+
+/* card body style */
+div.card-body {
+  background-color: var(--bg-card-body);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* stlye info button box */
+#contain-info-btn {
+  margin-top: 1.5rem !important;
+}
+
+/* hover stlye on favourite button */
+.fav-btn:hover {
+  background-color: var(--bg-ws);
+}
+
+/*  hover style on favourite icon*/
+.fav-btn:hover i {
+  color: var(--clr-blue);
+}
+
+footer.text-center {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+footer span {
+  color: darkturquoise;
+  font-family: cursive;
+  font-size: medium;
+}
+
+/* --------Breaking Point on mobile screen------------ */
+
+/* it working for 0 to 450px Height */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+
+}
+
+/* it's working for 0 to 450px width screens*/
+@media screen and (max-width: 400px) {
+  #meal-body h1 {
+    padding: 0.5rem;
+    font-size: 18px;
+  }
+
+  #search-bar {
+    margin-top: 2rem !important;
+  }
+}
+
+/* it's working for 0 to 360px width screens */
+@media screen and (max-width: 360px) {
+  .fav-btn {
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  div.card-body {
+    padding: 0.5rem;
+  }
+
+  nav {
+    padding-left: 0.4rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  .brand-logo {
+    height: 10vw;
+    min-height: 26px;
+  }
+
+}
